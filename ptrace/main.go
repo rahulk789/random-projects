@@ -20,7 +20,7 @@ func main() {
 
 	// Start the command
 	if err := cmd.Start(); err != nil {
-		fmt.Printf("Error starting command: %v\n", err)
+		fmt.Printf("Error starting the command: %v\n", err)
 		return
 	}
 
@@ -31,7 +31,7 @@ func main() {
 	// Wait for the process to stop
 	var status syscall.WaitStatus
 	if _, err := syscall.Wait4(pid, &status, 0, nil); err != nil {
-		fmt.Printf("Error waiting for process: %v\n", err)
+		fmt.Printf("Error waiting for the process: %v\n", err)
 		return
 	}
 
