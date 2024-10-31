@@ -20,7 +20,7 @@ func main() {
 
 	// Start the command
 	if err := cmd.Start(); err != nil {
-		fmt.Printf("Error starting command: %v\n", err)
+		fmt.Printf("Error starting the command: %v\n", err)
 		return
 	}
 
